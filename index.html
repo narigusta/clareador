@@ -282,6 +282,28 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 	}() );
 	
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper('.elementor-image-carousel-wrapper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 2000, // Tempo entre slides
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        speed: 500,
+    });
+});
+</script>
 <script src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
 <script src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
 <script src="js/jquery.min.js" id="jquery-core-js"></script>
